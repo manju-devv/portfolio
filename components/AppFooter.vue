@@ -166,12 +166,12 @@ const socialLinks = [
                             <a :href="link.href"
                                 class="group flex items-center justify-between gap-1 rounded-lg px-2 py-2.5 transition hover:bg-[#b5f36b]/[0.05]">
                                 <span class="flex min-w-0 items-center gap-2">
-                                    <span class="text-xs text-[#626d64] transition group-hover:text-[#b5f36b]">
+                                    <span class="text-sm text-[#626d64] transition group-hover:text-[#b5f36b]">
                                         {{ link.number }}
                                     </span>
 
                                     <span
-                                        class="text-xs text-[#929b94] transition group-hover:text-[#b5f36b] sm:text-sm">
+                                        class="text-md text-[#929b94] transition group-hover:text-[#b5f36b] sm:text-md">
                                         {{ link.label }}
                                     </span>
                                 </span>
@@ -192,7 +192,7 @@ const socialLinks = [
                     :viewport="{ once: true, amount: 0.2 }" :transition="{ duration: 0.8, delay: 0.35 }"
                     :whileHover="{ y: -5 }">
                     <div class="mb-5 flex items-center justify-between gap-2">
-                        <h3 class="text-sm font-semibold text-white">What I do</h3>
+                        <h3 class="text-md font-semibold text-white">What I do</h3>
                         <span class="text-[10px] text-[#626d64]">02</span>
                     </div>
 
@@ -206,11 +206,11 @@ const socialLinks = [
 
                             <span class="min-w-0">
                                 <span
-                                    class="block text-[11px] font-medium leading-5 text-[#d8ddd8] transition group-hover:text-[#b5f36b] sm:text-xs">
+                                    class="block text-md font-medium leading-5 text-[#d8ddd8] transition group-hover:text-[#b5f36b] sm:text-md">
                                     {{ service.label }}
                                 </span>
 
-                                <span class="mt-0.5 block text-[10px] leading-4 text-[#737e75]">
+                                <span class="mt-0.5 block text-[12px] leading-4 text-[#737e75]">
                                     {{ service.description }}
                                 </span>
                             </span>
@@ -229,7 +229,7 @@ const socialLinks = [
                         <span class="text-[10px] text-[#626d64]">03</span>
                     </div>
 
-                    <p class="mb-5 text-xs leading-6 text-[#929b94]">
+                    <p class="mb-5 text-md leading-6 text-[#929b94]">
                         Have a project or just want to connect? Find me here.
                     </p>
 
