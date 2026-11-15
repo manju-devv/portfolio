@@ -29,6 +29,12 @@ export default defineNuxtConfig({
       },
       title: "Freelance Software Developer | Web Apps, APIs & Digital Solutions",
       titleTemplate: "%s",
+      meta: [
+      {
+        name: "google-site-verification",
+        content: "FFTKNr4ikxXvoehVG7P9XTZj4n-SXd9Ftk19JsAl0-A",
+      },
+    ],
       link: [
         {
           rel: "icon",
