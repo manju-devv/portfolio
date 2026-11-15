@@ -8,7 +8,17 @@ export default defineNuxtConfig({
     enabled: true,
   },
 
-  modules: ["@nuxtjs/tailwindcss", "motion-v/nuxt"],
+  modules: [
+    "@nuxtjs/tailwindcss",
+    "motion-v/nuxt",
+    "@nuxtjs/sitemap",
+  ],
+
+  // Website information used by the sitemap
+  site: {
+    url: "https://portfolio-gamma-puce-mfmwc0op25.vercel.app",
+    name: "Full Stack Developer Portfolio",
+  },
 
   css: ["~/assets/css/main.css"],
 
