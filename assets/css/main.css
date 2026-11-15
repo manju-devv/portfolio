@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-background: #090b0a;
+  --color-surface: #111512;
+  --color-border: #252b27;
+  --color-primary: #b5f36b;
+  --color-muted: #929b94;
+}
+html,
+body {
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body {
+  background: var(--color-background);
+  color: #f4f7f4;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+}
+
+::selection {
+  background: #b5f36b;
+  color: #090b0a;
+}
+
+@layer components {
+  .section-container {
+    @apply mx-auto w-full px-6 md:px-[3rem] lg:px-[5rem];
+  }
+
+  .section-label {
+    @apply text-sm font-medium uppercase tracking-[0.2em];
+    color: var(--color-primary);
+  }
+
+  .primary-button {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold transition duration-300;
+    background: var(--color-primary);
+    color: #090b0a;
+  }
+
+  .primary-button:hover {
+    @apply -translate-y-1;
+    background: #c9ff87;
+  }
+
+  .outline-button {
+    @apply inline-flex items-center justify-center rounded-full border px-6 py-3 text-sm font-medium transition duration-300;
+    border-color: var(--color-border);
+  }
+
+  .outline-button:hover {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+  }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill {
+  -webkit-text-fill-color: #f4f7f4 !important;
+  caret-color: #b5f36b;
+  -webkit-box-shadow: 0 0 0 1000px #090b0a inset !important;
+  box-shadow: 0 0 0 1000px #090b0a inset !important;
+  transition: background-color 9999s ease-in-out 0s;
+}
+
+input,
+textarea,
+select {
+  color-scheme: dark;
+}
+
+input:autofill,
+textarea:autofill,
+select:autofill {
+  color-scheme: dark;
+}
