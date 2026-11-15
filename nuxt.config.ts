@@ -30,11 +30,25 @@ export default defineNuxtConfig({
       title: "Freelance Software Developer | Web Apps, APIs & Digital Solutions",
       titleTemplate: "%s",
       meta: [
-      {
-        name: "google-site-verification",
-        content: "FFTKNr4ikxXvoehVG7P9XTZj4n-SXd9Ftk19JsAl0-A",
-      },
-    ],
+        {
+          name: "google-site-verification",
+          content: "FFTKNr4ikxXvoehVG7P9XTZj4n-SXd9Ftk19JsAl0-A",
+        },
+      ],
+      script: [
+        {
+          src: "https://www.googletagmanager.com/gtag/js?id=G-XNPTPQF7LN",
+          async: true,
+        },
+        {
+          innerHTML: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-XNPTPQF7LN');
+        `,
+        },
+      ],
       link: [
         {
           rel: "icon",
