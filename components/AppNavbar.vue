@@ -151,7 +151,7 @@ const itemVariants = {
 
                 <!-- Mobile toggle -->
                 <button type="button"
-                    class="flex h-10 w-10 items-center justify-center rounded-xl border border-[#303a31] text-white transition duration-300 hover:border-[#b5f36b]/50 hover:bg-[#b5f36b]/10 lg:hidden outline-none"
+                    class="mobile-menu-toggle flex h-10 w-10 items-center justify-center rounded-xl border border-[#303a31] text-white transition duration-300 hover:border-[#b5f36b]/50 hover:bg-[#b5f36b]/10 lg:hidden"
                     :aria-expanded="mobileMenuOpen" aria-controls="mobile-navigation"
                     :aria-label="mobileMenuOpen ? 'Close menu' : 'Open menu'" @click="mobileMenuOpen = !mobileMenuOpen">
                     <motion.svg :animate="{ rotate: mobileMenuOpen ? 90 : 0 }" :transition="{ duration: 0.2 }"
@@ -249,3 +249,16 @@ const itemVariants = {
         </AnimatePresence>
     </header>
 </template>
+<style scoped>
+    .mobile-menu-toggle,
+.mobile-menu-toggle:focus,
+.mobile-menu-toggle:focus-visible,
+.mobile-menu-toggle:active,
+.mobile-menu-toggle :deep(*),
+.mobile-menu-toggle :deep(*:focus),
+.mobile-menu-toggle :deep(*:focus-visible) {
+    outline: none !important;
+    box-shadow: none !important;
+    -webkit-tap-highlight-color: transparent;
+}
+</style>

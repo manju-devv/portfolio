@@ -175,7 +175,7 @@ ${form.value.message.trim()}`,
     );
 
     window.location.href =
-        `mailto:YOUR_EMAIL@example.com?subject=${subject}&body=${body}`;
+        `mailto:manjunathpurum@gmail.com?subject=${subject}&body=${body}`;
 };
 </script>
 
@@ -255,7 +255,7 @@ ${form.value.message.trim()}`,
                                     LinkedIn
                                 </p>
 
-                                <a href="www.linkedin.com/in/manjunath-purum" target="_blank"
+                                <a href="https://www.linkedin.com/in/manjunath-purum" target="_blank"
                                     rel="noopener noreferrer"
                                     class="text-sm font-medium transition hover:text-[#b5f36b]">
                                     Connect professionally ↗
